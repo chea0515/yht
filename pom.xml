@@ -18,7 +18,7 @@
     <properties>
         <yht.base.version>1.0-SNAPSHOT</yht.base.version>
         <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
-        <jackson.version>2.9.5</jackson.version>
+        <jackson.version>2.9.8</jackson.version>
         <jdk.version>1.8</jdk.version>
         <project.encoding>utf-8</project.encoding>
     </properties>
