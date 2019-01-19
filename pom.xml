@@ -19,6 +19,8 @@
         <yht.base.version>1.0-SNAPSHOT</yht.base.version>
         <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
         <jackson.version>2.9.5</jackson.version>
+        <jdk.version>1.8</jdk.version>
+        <project.encoding>utf-8</project.encoding>
     </properties>
 
     <modules>
@@ -117,22 +119,42 @@
     </dependencyManagement>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                        <encoding>${project.encoding}</encoding>
+                        <compilerArguments>
+                            <!--suppress UnresolvedMavenProperty -->
+                            <bootclasspath>${JAVA_HOME}/jre/lib/rt.jar;${JAVA_HOME}/jre/lib/jce.jar</bootclasspath>
+                        </compilerArguments>
+                        <fork>true</fork>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.version}</version>
+                    <configuration>
+                        <mainClass>com.cc.wx.yht.YhtApplication</mainClass>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
     <repositories>
         <repository>
             <id>aliyun-nexus</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>maven-default</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>
 
