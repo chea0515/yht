@@ -2,6 +2,15 @@ server:
   port: 9000
   contextPath: /
 
+# spring
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/yhtdb?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
 # http://116.247.112.152/index  http://ichnnet.5166.info/index
 
 # weixin config
