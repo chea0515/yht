@@ -1,4 +1,4 @@
-package com.cc.yht.module.menu.service;
+package com.cc.yht.module.weixin.menu.service;
 
 import com.cc.yht.sdk.model.menu.Menu;
 import com.cc.yht.sdk.model.menu.MenuInfoResponse;

@@ -1,4 +1,4 @@
-package com.cc.yht.module.core;
+package com.cc.yht.module.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

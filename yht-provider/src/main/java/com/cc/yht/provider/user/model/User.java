@@ -5,7 +5,7 @@ import com.cc.yht.provider.common.BaseEntity;
 public class User extends BaseEntity {
 
     /** serialVersionUID */
-    private static final long serialVersionUID = 4985082372679507280L;
+    private static final long serialVersionUID = 1L;
 
     private String name;
     private String password;

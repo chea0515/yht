@@ -1,6 +1,6 @@
-package com.cc.yht.module.menu.controller;
+package com.cc.yht.module.weixin.menu.controller;
 
-import com.cc.yht.module.menu.service.IMenuService;
+import com.cc.yht.module.weixin.menu.service.IMenuService;
 import com.cc.yht.sdk.model.menu.Menu;
 import com.cc.yht.sdk.model.menu.MenuInfoResponse;
 import com.cc.yht.sdk.model.menu.MenuResponse;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/menu")
+@RequestMapping("/api/wx/menu")
 public class MenuController {
 
     @Autowired

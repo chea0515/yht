@@ -1,6 +1,6 @@
 package com.cc.yht.module.user.controller;
 
-import com.cc.yht.module.core.PageResponseWrapper;
+import com.cc.yht.module.common.PageResponseWrapper;
 import com.cc.yht.module.user.service.IUserService;
 import com.cc.yht.module.user.vo.UserListRequest;
 import com.cc.yht.module.user.vo.UserVO;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/yht/user")
+@RequestMapping("/api/user")
 public class UserController {
 
     @Autowired

@@ -22,6 +22,7 @@
 
     <typeAliases>
         <typeAlias type="com.cc.yht.provider.user.model.User" alias="User" />
+        <typeAlias type="com.cc.yht.provider.score.model.Score" alias="Score" />
         <!--<package name="" />-->
     </typeAliases>
 

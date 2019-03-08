@@ -23,7 +23,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成模型的包名和位置-->
-        <javaModelGenerator targetPackage="com.cc.yht.provider.user.model" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.cc.yht.provider.score.model" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
@@ -32,12 +32,12 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.cc.yht.provider.user.dao" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.cc.yht.provider.score.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
-        <table tableName="t_user"
-               domainObjectName="User2"
+        <table tableName="t_score"
+               domainObjectName="Score"
                enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false"

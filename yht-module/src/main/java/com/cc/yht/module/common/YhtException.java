@@ -1,4 +1,4 @@
-package com.cc.yht.module.core;
+package com.cc.yht.module.common;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,9 +8,9 @@ import lombok.Setter;
 public class YhtException extends RuntimeException {
 
     /** serialVersionUID */
-    private static final long serialVersionUID = -8130044113007215032L;
+    private static final long serialVersionUID = 1L;
 
-    private String code;
+    private String code = "400";
     private String msg;
 
     public YhtException() {

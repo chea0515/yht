@@ -1,6 +1,6 @@
-package com.cc.yht.module.menu.service.impl;
+package com.cc.yht.module.weixin.menu.service.impl;
 
-import com.cc.yht.module.menu.service.IMenuService;
+import com.cc.yht.module.weixin.menu.service.IMenuService;
 import com.cc.yht.sdk.model.menu.Menu;
 import com.cc.yht.sdk.model.menu.MenuInfoResponse;
 import com.cc.yht.sdk.model.menu.MenuResponse;

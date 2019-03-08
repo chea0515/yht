@@ -1,4 +1,4 @@
-package com.cc.yht.module.core;
+package com.cc.yht.module.weixin;
 
 import com.cc.yht.sdk.model.common.BaseEvent;
 import com.cc.yht.sdk.model.common.MsgType;
@@ -22,7 +22,7 @@ import java.util.Optional;
 @Slf4j
 @RestController
 @RequestMapping("/wx")
-public class CoreController {
+public class WeixinController {
 
     @Value("${weixin.config.token}")
     private String token;

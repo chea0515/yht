@@ -1,4 +1,4 @@
-package com.cc.yht.module.core;
+package com.cc.yht.module.common;
 
 import lombok.Getter;
 import lombok.Setter;

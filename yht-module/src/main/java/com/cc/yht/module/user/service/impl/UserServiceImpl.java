@@ -4,7 +4,7 @@ import com.cc.yht.module.user.service.IUserService;
 import com.cc.yht.module.user.vo.UserListRequest;
 import com.cc.yht.module.user.vo.UserVO;
 import com.cc.yht.module.user.vo.UsersWrapper;
-import com.cc.yht.provider.common.Page;
+import com.cc.yht.provider.common.PageHelper;
 import com.cc.yht.provider.common.PageInfo;
 import com.cc.yht.provider.user.dao.UserDAO;
 import com.cc.yht.provider.user.model.User;
@@ -20,7 +20,7 @@ public class UserServiceImpl implements IUserService {
     @Autowired
     private UserDAO userDAO;
 
-    @Page
+    @PageHelper
     @Override
     public UsersWrapper getUsersWrapper(UserListRequest request) {
         UsersWrapper wrapper = new UsersWrapper();

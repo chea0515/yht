@@ -15,14 +15,14 @@ import java.util.Arrays;
  * 携带分页信息的类必须继承 PageBase 类
  * @see com.cc.yht.provider.common.PageBase
  * <br/>
- * 在要进行分页的方法上加上 @Page 注解
- * @see com.cc.yht.provider.common.Page
+ * 在要进行分页的方法上加上 @PageHelper 注解
+ * @see com.cc.yht.provider.common.PageHelper
  */
 @Aspect
 @Component
 public class PageAspect {
 
-    @Pointcut("@annotation(com.cc.yht.provider.common.Page)")
+    @Pointcut("@annotation(com.cc.yht.provider.common.PageHelper)")
     public void pointCut() { }
 
     @Before("pointCut()")

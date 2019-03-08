@@ -10,6 +10,13 @@ spring:
     password: root
     driverClassName: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+  # thymeleaf
+  thymeleaf:
+    prefix: classpath:/templates
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    cache: false
 
 # http://116.247.112.152/index  http://ichnnet.5166.info/index
 

@@ -1,7 +1,6 @@
 package com.cc.yht.provider.common;
 
 import com.github.pagehelper.PageHelper;
-import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,11 +12,12 @@ public class MyBatisConfig {
     /**
      * 驼峰命名
      */
+    /*
     @Bean
     public ConfigurationCustomizer configurationCustomizer() {
         return (org.apache.ibatis.session.Configuration configuration) ->
                 configuration.setMapUnderscoreToCamelCase(true);
-    }
+    }*/
 
     /**
      * PageHelper 分页插件

@@ -1,4 +1,4 @@
-package com.cc.yht.module.utils;
+package com.cc.yht.module.common;
 
 import com.cc.yht.sdk.WXClient;
 import org.springframework.beans.factory.annotation.Value;
