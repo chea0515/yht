@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- base configuration start -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link type="text/css" rel="stylesheet" href="../../static/config/base.css"/>
+    <link type="text/css" rel="stylesheet" href="../../static/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/laydate/theme/default/laydate.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/layer/theme/default/layer.css">
+    <script src="../../static/libs/angular.min.js"></script>
+    <script src="../../static/libs/jquery.min.js"></script>
+    <script src="../../static/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/libs/layui/laydate/laydate.js"></script>
+    <script src="../../static/libs/layui/layer/layer.js"></script>
+    <script src="../../static/libs/jquery.min.js"></script>
+    <script src="../../static/libs/jquery.min.js"></script>
+
+    <script src="../../static/config/base.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../../static/yht.css"/>
+    <script src="../../static/yht.js"></script>
+    <!-- base configuration start end -->
+
+</head>
+<body ng-app="myApp">
+<div class="container-fluid" ng-controller="ScoreController">
+    <!-- top -->
+    <div class="row">
+        <div class="navbar navbar-default navbar-fixed-top cc-top-opt">
+            <div class="col-xs-4 text-left"><a class="glyphicon glyphicon-chevron-left" href="javascript:;"></a></div>
+            <div class="col-xs-8">我的积分</div>
+        </div>
+    </div>
+
+    <!-- detail -->
+    <div class="row yht-score-detail">
+        <div class="col-xs-12 text-center detail-sg">
+            当前&nbsp;<span class="score-total">10086</span>&nbsp;分
+            <div style="margin-top: 10px;">
+                <button class="btn btn-primary" onclick="alert('haha');">
+                    <i class="glyphicon glyphicon-pencil"></i>&nbsp;签到领积分
+                </button>
+            </div>
+        </div>
+        <div class="col-xs-12 text-center detail-mk">
+            <table class="table table-bordered">
+                <tr>
+                    <td><a href="javascript:;">下单赚积分</a></td>
+                    <td><a href="javascript:;">做任务赚积分</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="cc-split"></div>
+
+    <div class="row yht-score-items">
+        <!-- repeat -->
+        <div class="score-item">
+            <div class="col-xs-8">
+                <div>通过签到获得积分</div>
+                <div>2019-10-11 12:34</div>
+            </div>
+            <div class="col-xs-4 text-right">+2</div>
+        </div>
+        <div class="score-item">
+            <div class="col-xs-8">
+                <div>通过签到获得积分</div>
+                <div>2019-10-11 12:34</div>
+            </div>
+            <div class="col-xs-4 text-right">+2</div>
+        </div>
+        <div class="score-item">
+            <div class="col-xs-8">
+                <div>通过完成订单获得积分</div>
+                <div>2019-10-11 12:34</div>
+            </div>
+            <div class="col-xs-4 text-right">+15</div>
+        </div>
+        <div class="score-item">
+            <div class="col-xs-8">
+                <div>通过签到获得积分</div>
+                <div>2019-10-11 12:34</div>
+            </div>
+            <div class="col-xs-4 text-right">+2</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -2,7 +2,9 @@
 body {
     background-color: #f2f2f2 !important;
 }
-
+a {
+	color: #444 !important;
+}
 a, a:hover, a:focus, a:active {text-decoration: none !important;}
 
 ul {padding:0;}
@@ -55,4 +57,35 @@ input { outline: none; }
 /* page helper */
 li.cc-page-on > a {
 	background-color: #ddd !important;
+}
+
+.cc-split {
+	width: 100%;
+	clear: both;
+	margin: 10px 0;
+	display: inline-grid;
+}
+
+.cc-tip {
+	height: 20px;
+	margin:10px 0;
+	clear: both;
+}
+
+.cc-tip .tip-color {
+	height:100%;
+	float: left;
+	border: 4px solid #F00;
+	margin-right:6px;
+}
+.cc-tip .tip-title {
+}
+
+.cc-top-opt {
+	height: 40px !important;
+	min-height: 40px !important;
+	max-height: 40px !important;
+	padding: 4px 2px;
+	line-height: 30px;
+	background-color: #FFF !important;
 }

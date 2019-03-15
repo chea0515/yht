@@ -11,13 +11,13 @@ jQuery.extend({
 		let index = layer.load();
 		let _success = function(d, s) {
 			layer.close(index);
-			if(options.success && typeof(options.success) == 'function') {
+			if(options.success && typeof(options.success) === 'function') {
 				options.success(d, s);
 			}
 		};
 		let _error = function(d) {
 			layer.close(index);
-			if(options.error && typeof(options.error) == 'function') {
+			if(options.error && typeof(options.error) === 'function') {
 				options.error(d);
 			}
 		};
@@ -107,7 +107,7 @@ jQuery.extend({
 	convertTree: function(rows) {
 		let hasLeaf = function(rows, pid) {
 			for(let i=0; i<rows.length; i++){
-				if (rows[i].id == pid) return true;
+				if (rows[i].id === pid) return true;
 			}
 			
 			return false;
@@ -133,7 +133,7 @@ jQuery.extend({
 		while(toDo.length) {
 			let node = toDo.shift();
 			rows.forEach(row => {
-				if (row.pid == node.id) {
+				if (row.pid === node.id) {
 					let child = {
 						id: row.id,
 						title: row.title,

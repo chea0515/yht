@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- base configuration start -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link type="text/css" rel="stylesheet" href="../../static/config/base.css"/>
+    <link type="text/css" rel="stylesheet" href="../../static/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/laydate/theme/default/laydate.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/layer/theme/default/layer.css">
+    <script src="../../static/libs/angular.min.js/"></script>
+    <script src="../../static/libs/jquery.min.js/"></script>
+    <script src="../../static/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/libs/layui/laydate/laydate.js"></script>
+    <script src="../../static/libs/layui/layer/layer.js"></script>
+    <script src="../../static/libs/jquery.min.js/"></script>
+    <script src="../../static/libs/jquery.min.js/"></script>
+
+    <script src="../../static/config/base.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../../static/yht.css"/>
+    <script src="../../static/yht.js"></script>
+    <!-- base configuration start end -->
+    
+</head>
+<body ng-app="myApp">
+<div class="container-fluid" ng-controller="LoginController">
+
+    <div class="row yht-login">
+        <div class="input-group login-ipt-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="text" class="form-control" placeholder="输入手机号">
+        </div>
+        <div class="input-group login-ipt-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input type="password" class="form-control" placeholder="输入密码">
+        </div>
+        <div class="text-center login-ipt-group">
+            <button class="btn btn-info">登录</button>
+        </div>
+        <div class="text-center login-ipt-group">
+            没有账号,&nbsp;<a href="javascript:;" style="color: #2b669a !important;">点击注册</a>
+        </div>
+
+    </div>
+
+    <div class="row yht-register">
+        <div class="input-group login-ipt-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="text" class="form-control" placeholder="输入手机号">
+        </div>
+        <div class="input-group login-ipt-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input type="password" class="form-control" placeholder="输入密码">
+        </div>
+        <div class="text-center login-ipt-group">
+            <button class="btn btn-info">注册</button>
+        </div>
+        <div class="text-center login-ipt-group">
+            已有账号,&nbsp;<a href="javascript:;" style="color: #2b669a !important;">点击登录</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
