@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置</title>
+
+    <!-- base configuration start -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link type="text/css" rel="stylesheet" href="../../static/config/base.css"/>
+    <link type="text/css" rel="stylesheet" href="../../static/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/laydate/theme/default/laydate.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/layer/theme/default/layer.css">
+    <script src="../../static/libs/angular.min.js"></script>
+    <script src="../../static/libs/jquery.min.js"></script>
+    <script src="../../static/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/libs/layui/laydate/laydate.js"></script>
+    <script src="../../static/libs/layui/layer/layer.js"></script>
+
+    <script src="../../static/config/base.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../../static/yht.css"/>
+    <script src="../../static/yht.js"></script>
+    <!-- base configuration start end -->
+
+</head>
+<body ng-app="myApp">
+<div class="container-fluid" ng-controller="SettingController">
+
+    <!-- top -->
+    <div class="row">
+        <div class="navbar navbar-default navbar-fixed-top cc-top-opt">
+            <div class="col-xs-4 text-left"><a class="glyphicon glyphicon-chevron-left" href="javascript:history.go(-1);"></a></div>
+            <div class="col-xs-8">设置</div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="row">
+        <form name="myForm" ng-submit="" class="form-horizontal" novalidate>
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Email</label>
+                <div class="col-xs-10">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="settingController.js"></script>
+</body>
+</html>

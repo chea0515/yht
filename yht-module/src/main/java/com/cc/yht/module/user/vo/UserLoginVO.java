@@ -14,7 +14,7 @@ public class UserLoginVO {
     private Long userId;
     private String userName;
     private String userPassword;
-    private Integer telephone;
+    private Long telephone;
     private Date loginTime;
     private Integer status;
 }

@@ -1,4 +1,4 @@
-app.controller("IndexController", ["$scope", function($scope) {
+MY_APP.controller("IndexController", ["$scope", function($scope) {
     $scope.indexData = {
         searchTip : '输入宝贝名称',
     };

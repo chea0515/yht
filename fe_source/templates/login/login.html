@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- base configuration start -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link type="text/css" rel="stylesheet" href="../../static/config/base.css"/>
+    <link type="text/css" rel="stylesheet" href="../../static/libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/laydate/theme/default/laydate.css">
+    <link type="text/css" rel="stylesheet" href="../../static/libs/layui/layer/theme/default/layer.css">
+    <script src="../../static/libs/angular.min.js"></script>
+    <script src="../../static/libs/jquery.min.js"></script>
+    <script src="../../static/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/libs/layui/laydate/laydate.js"></script>
+    <script src="../../static/libs/layui/layer/layer.js"></script>
+
+    <script src="../../static/config/base.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="../../static/yht.css"/>
+    <script src="../../static/yht.js"></script>
+    <!-- base configuration start end -->
+    
+</head>
+<body ng-app="myApp">
+<div class="container-fluid" ng-controller="LoginController">
+
+    <div class="row yht-login">
+        <form novalidate name="myForm" ng-submit="submitForm(myForm.$valid)">
+            <div class="input-group login-ipt-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="number" ng-model="user.telephone" class="form-control" placeholder="输入手机号" ng-minlength="11" ng-maxlength="11" required>
+            </div>
+            <div class="input-group login-ipt-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" ng-model="user.userPassword" class="form-control" placeholder="输入密码(6-16位)" ng-minlength="6" ng-maxlength="12" required>
+            </div>
+            <div class="text-center login-ipt-group">
+                <div ng-show="loginData.showLogin"><button type="submit" class="btn btn-info" ng-disabled="myForm.$invalid">登录</button></div>
+                <div ng-show="!loginData.showLogin"><button type="submit" class="btn btn-info" ng-disabled="myForm.$invalid">注册</button></div>
+            </div>
+            <div class="text-center login-ipt-group">
+                <div ng-show="loginData.showLogin">
+                    没有账号,&nbsp;<a href="javascript:;" ng-click="addOrRegister()" style="color: #2b669a !important;">点击注册</a></div>
+                <div ng-show="!loginData.showLogin">
+                    已有账号,&nbsp;<a href="javascript:;" ng-click="addOrRegister()" style="color: #2b669a !important;">点击登录</a></div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="loginController.js"></script>
+</body>
+</html>
