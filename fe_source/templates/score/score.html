@@ -28,15 +28,13 @@
 <body ng-app="myApp">
 <div class="container-fluid" ng-controller="ScoreController">
     <!-- top -->
-    <div class="row">
-        <div class="navbar navbar-default navbar-fixed-top cc-top-opt">
-            <div class="col-xs-4 text-left"><a class="glyphicon glyphicon-chevron-left" href="javascript:history.go(-1);"></a></div>
-            <div class="col-xs-8">我的积分</div>
-        </div>
+    <div class="navbar navbar-default navbar-fixed-top yht-top">
+        <div class="col-xs-4 text-left"><a class="glyphicon glyphicon-chevron-left" href="javascript:history.go(-1);"></a></div>
+        <div class="col-xs-8">我的积分</div>
     </div>
 
     <!-- detail -->
-    <div class="row yht-score-detail">
+    <div class="row yht-score-detail yht-top-split">
         <div class="col-xs-12 text-center detail-sg">
             当前&nbsp;<span class="score-total">10086</span>&nbsp;分
             <div style="margin-top: 10px;">
@@ -89,5 +87,7 @@
     </div>
 
 </div>
+
+<script src="scoreController.js"></script>
 </body>
 </html>

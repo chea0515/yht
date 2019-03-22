@@ -28,17 +28,15 @@
 <body ng-app="myApp">
 <div class="container-fluid" ng-controller="IndexController">
     <!-- top search -->
-    <div class="row">
-        <div class="navbar navbar-default navbar-fixed-top yht-top">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="{{indexData.searchTip}}">
-                <span class="input-group-addon"><a class="glyphicon glyphicon-search"></a></span>
-            </div>
+    <div class="navbar navbar-default navbar-fixed-top yht-top">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="{{indexData.searchTip}}">
+            <span class="input-group-addon"><a class="glyphicon glyphicon-search"></a></span>
         </div>
     </div>
 
     <!-- scroll -->
-    <div class="row yht-index-scroll">
+    <div class="row yht-index-scroll yht-top-split">
         <div class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">

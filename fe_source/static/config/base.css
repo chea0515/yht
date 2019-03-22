@@ -81,11 +81,3 @@ li.cc-page-on > a {
 .cc-tip .tip-title {
 }
 
-.cc-top-opt {
-	height: 40px !important;
-	min-height: 40px !important;
-	max-height: 40px !important;
-	padding: 4px 2px;
-	line-height: 30px;
-	background-color: #FFF !important;
-}

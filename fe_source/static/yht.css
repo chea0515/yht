@@ -2,9 +2,18 @@
 
 /* top */
 .yht-top {
+    height: 40px;
     min-height: 40px;
     max-height: 40px;
+    padding: 4px 2px;
+    line-height: 30px;
+    background-color: #FFF;
 }
+
+.yht-top-split {
+    margin-top: 40px;
+}
+
 /* bottom */
 .yht-bottom {
 }
@@ -25,7 +34,6 @@
 
 /* index */
 .yht-index-scroll {
-    margin-top: 40px;
 }
 .yht-index-scroll .carousel-inner {
     height: 200px;
@@ -126,7 +134,6 @@
 
 /* score */
 .yht-score-detail {
-    margin-top: 45px;
 }
 .yht-score-detail .detail-sg {
     margin: 10px 0;

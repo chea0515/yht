@@ -29,15 +29,13 @@
 <div class="container-fluid" ng-controller="SettingController">
 
     <!-- top -->
-    <div class="row">
-        <div class="navbar navbar-default navbar-fixed-top cc-top-opt">
-            <div class="col-xs-4 text-left"><a class="glyphicon glyphicon-chevron-left" href="javascript:history.go(-1);"></a></div>
-            <div class="col-xs-8">设置</div>
-        </div>
+    <div class="navbar navbar-default navbar-fixed-top yht-top">
+        <div class="col-xs-4 text-left"><a class="glyphicon glyphicon-chevron-left" href="javascript:history.go(-1);"></a></div>
+        <div class="col-xs-8">设置</div>
     </div>
 
     <!-- main -->
-    <div class="row">
+    <div class="row yht-top-split">
         <form name="myForm" ng-submit="" class="form-horizontal" novalidate>
             <div class="form-group">
                 <label class="col-xs-2 control-label">Email</label>
@@ -47,12 +45,12 @@
             </div>
             <div class="form-group">
                 <label class="col-xs-2 control-label">Password</label>
-                <div class="col-sm-10">
+                <div class="col-xs-10">
                     <input type="password" class="form-control" placeholder="Password">
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-xs-offset-2 col-sm-10">
+                <div class="col-xs-offset-2 col-xs-10">
                     <button type="submit" class="btn btn-default">保存</button>
                 </div>
             </div>
